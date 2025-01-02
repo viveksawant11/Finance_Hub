@@ -5,7 +5,7 @@ import DoughnutChart from "./DoughnutChart";
 interface TotalBalanceBoxProps {
   totalBanks: number;
   totalCurrentBalance: number;
-  accounts: Array<{ name: string; value: number }>; // Define the structure of accounts
+  accounts: Array<{ name: string; value: number }>;
 }
 
 const TotalBalanceBox = ({

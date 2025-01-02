@@ -6,7 +6,7 @@ import { Doughnut } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 interface DoughnutChartProps {
-  accounts: Array<{ name: string; value: number }>; // Define the structure of accounts
+  accounts: Array<{ name: string; value: number }>;
 }
 
 const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
@@ -14,11 +14,11 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
     datasets: [
       {
         label: "Banks",
-        data: accounts.map((account) => account.value), // Extract values for the chart
+        data: accounts.map((account) => account.value),
         backgroundColor: ["#0747b6", "#2265d8", "#2f91fa"],
       },
     ],
-    labels: accounts.map((account) => account.name), // Extract labels for the chart
+    labels: accounts.map((account) => account.name),
   };
 
   return <Doughnut data={data} />;
