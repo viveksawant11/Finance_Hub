@@ -11,20 +11,20 @@ const Sidebar = ({ user }: SidebarProps) => {
 
   return (
     <section className="sidebar">
-      <div className="flex items-center gap-2 mb-6 py-2">
-        <Link href="/" className="cursor-pointer flex items-center gap-2">
+      <nav className="flex flex-col gap-4">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 mb-6 py-4">
           <Image
             src="/icons/logo.svg"
             width={34}
             height={34}
             alt="Finance Hub logo"
-            className="size-[35px] max-xl:size-14"
+            className="size-[24px] max-xl:size-14"
           />
-          <h1 className="sidebar-logo">Finance Hub</h1>
+          <h1 className="sidebar-logo text-lg font-semibold">Finance Hub</h1>
         </Link>
-      </div>
 
-      <nav className="flex flex-col gap-4">
+        {/* Sidebar Links */}
         {sidebarLinks.map((item) => {
           const isActive =
             pathname === item.route || pathname.startsWith(`${item.route}/`);
@@ -41,7 +41,7 @@ const Sidebar = ({ user }: SidebarProps) => {
                 }
               )}
             >
-              <div className="relative size-6">
+              <div className="relative w-6 h-6">
                 <Image
                   src={item.imgURL}
                   alt={item.label}
