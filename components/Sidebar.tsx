@@ -13,13 +13,13 @@ const Sidebar = ({ user }: SidebarProps) => {
     <section className="sidebar">
       <nav className="flex flex-col gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 mb-6 py-4">
+        <Link href="/" className="flex items-center gap-2 mb-6 py-4 px-4">
           <Image
             src="/icons/logo.svg"
             width={34}
             height={34}
             alt="Finance Hub logo"
-            className="size-[24px] max-xl:size-14"
+            className="size-[35px] max-xl:size-14"
           />
           <h1 className="sidebar-logo text-lg font-semibold">Finance Hub</h1>
         </Link>
