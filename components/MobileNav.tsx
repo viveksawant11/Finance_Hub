@@ -31,7 +31,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
           />
         </SheetTrigger>
         <SheetContent className="border-none bg-white">
-          <Link href="/" className="flex items-center gap-2 mb-6 py-4 px-4">
+          <Link
+            href="/"
+            className="cursor-pointer flex items-center gap-2 mb-6 py-4 px-4"
+          >
             <Image
               src="/icons/logo.svg"
               width={34}
