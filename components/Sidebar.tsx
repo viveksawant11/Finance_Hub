@@ -12,7 +12,7 @@ const Sidebar = ({ user }: SidebarProps) => {
   return (
     <section className="sidebar">
       <nav className="flex flex-col gap-4">
-        {/* Logo */}
+        {/* Logo and Name*/}
         <Link href="/" className="flex items-center gap-2 mb-6 py-4 px-4">
           <Image
             src="/icons/logo.svg"
@@ -23,7 +23,6 @@ const Sidebar = ({ user }: SidebarProps) => {
           />
           <h1 className="sidebar-logo text-lg font-semibold">Finance Hub</h1>
         </Link>
-
         {/* Sidebar Links */}
         {sidebarLinks.map((item) => {
           const isActive =
@@ -59,7 +58,9 @@ const Sidebar = ({ user }: SidebarProps) => {
             </Link>
           );
         })}
+        USER
       </nav>
+      FOOTER
     </section>
   );
 };
